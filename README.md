@@ -11,6 +11,8 @@ clojure -Sdeps '{:deps {io.github.aamedina/vocab {:git/sha "acca5d66ca859dbb22e9
 names the vocabulary
 ### :rdfa/uri
 provide the URI for the vocabulary
+### :git/sha
+provide the :git/sha for io.github.aamedina/rdf in deps.edn
 
 ## Notes
 
