@@ -2,23 +2,21 @@
 A deps-new template to create RDF vocabularies with Clojure.
 
 ## Usage
-This is a template project for use with [deps-new](https://github.com/seancorfield/deps-new).
-As originally generated, it will produce a new library project when run:
 
-    $ clojure -Sdeps '{:deps {io.github.aamedina/vocab {:local/root "."}}}' -Tnew create :template aamedina/vocab :name myusername/mycoollib
+``` bash
+clojure -Sdeps '{:deps {io.github.aamedina/vocab {:local/root "."}}}' -Tnew create :template aamedina/vocab :name net.wikipunk/example :rdfa/prefix "example" :rdfa/uri '"https://wikipunk.net/example/"' :git/sha '"7e688f78c3bfb92fa735f0f11d1418cd73a5b20a"'
+```
+
+:rdfa/prefix -- names the vocabulary
+:rdfa/uri -- provides the Linked Data URI mapping the :rdfa/prefix
+
+This is a template project for use with [deps-new](https://github.com/seancorfield/deps-new).
 
 Assuming you have installed `deps-new` as your `new` "tool" via:
 
 ```bash
 clojure -Ttools install io.github.seancorfield/deps-new '{:git/tag "v0.5.0"}' :as new
 ```
-
-> Note: once the template has been published (to a public git repo), the invocation will be the same, except the `:local/root` dependency will be replaced by a git or Maven-like coordinate.
-
-Run this template project's tests (by default, this just validates your template's `template.edn`
-file -- that it is valid EDN and it satisfies the `deps-new` Spec for template files):
-
-    $ clojure -T:build test
 
 ## License
 Copyright (c) 2023 Adrian Medina
