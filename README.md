@@ -4,11 +4,15 @@ A deps-new template to create RDF vocabularies with Clojure.
 ## Usage
 
 ``` bash
-clojure -Sdeps '{:deps {io.github.aamedina/vocab {:local/root "."}}}' -Tnew create :template aamedina/vocab :name net.wikipunk/example :rdfa/prefix "example" :rdfa/uri '"https://wikipunk.net/example/"' :git/sha '"7e688f78c3bfb92fa735f0f11d1418cd73a5b20a"'
+clojure -Sdeps '{:deps {io.github.aamedina/vocab {:git/sha "acca5d66ca859dbb22e909c5cd615df1a8471043"}}}' -Tnew create :template aamedina/vocab :name net.wikipunk/example :rdfa/prefix "example" :rdfa/uri '"https://wikipunk.net/example/"' :git/sha '"7e688f78c3bfb92fa735f0f11d1418cd73a5b20a"'
 ```
 
-:rdfa/prefix -- names the vocabulary
-:rdfa/uri -- provides the Linked Data URI mapping the :rdfa/prefix
+### :rdfa/prefix 
+names the vocabulary
+### :rdfa/uri
+provide the URI for the vocabulary
+
+## Notes
 
 This is a template project for use with [deps-new](https://github.com/seancorfield/deps-new).
 
