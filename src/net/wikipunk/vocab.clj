@@ -1,4 +1,6 @@
-(ns net.wikipunk.vocab)
+(ns net.wikipunk.vocab
+  (:require
+   [clojure.string :as str]))
 
 (defn data-fn
   "Example data-fn handler.
@@ -16,4 +18,4 @@
   [edn data]
   ;; must return the whole EDN hash map
   (println "template-fn returning edn")
-  edn)
+  (assoc-in edn [:transform 2 2 "rdf.tmpl"] (str (str/replace (:rdfa/prefix data) #"\." "/") ".clj")))
