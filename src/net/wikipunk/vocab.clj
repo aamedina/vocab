@@ -1,4 +1,4 @@
-(ns aamedina.vocab)
+(ns net.wikipunk.vocab)
 
 (defn data-fn
   "Example data-fn handler.

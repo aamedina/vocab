@@ -1,8 +1,8 @@
 {:description "A new RDF vocabulary for wikipunk.net"
  ;; this does not transform the data but does print a message:
- :data-fn     aamedina.vocab/data-fn
+ :data-fn     net.wikipunk.vocab/data-fn
  ;; this does not transform the EDN but does print a message:
- :template-fn aamedina.vocab/template-fn
+ :template-fn net.wikipunk.vocab/template-fn
  :transform
  [["build" ""
    {"deps.tmpl" "deps.edn"}]
