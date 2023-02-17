@@ -3,9 +3,7 @@ A deps-new template to create RDF vocabularies with Clojure.
 
 ## Usage
 
-``` bash
-clojure -Sdeps '{:deps {io.github.aamedina/vocab {:git/sha "7c818fea5e709e16afa24f68d6d8098a75078948"}}}' -Tnew create :template aamedina/vocab :name net.wikipunk/example :rdfa/prefix "example" :rdfa/uri '"https://wikipunk.net/example/"' :git/sha '"7e688f78c3bfb92fa735f0f11d1418cd73a5b20a"'
-```
+<script src="https://gist.github.com/aamedina/c4a1d73969e133eb29ddf5d02708ad0a.js"></script>
 
 ### :rdfa/prefix 
 names the vocabulary
