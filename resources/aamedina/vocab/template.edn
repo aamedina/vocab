@@ -9,4 +9,4 @@
   ["src" "src/{{top/file}}/{{main/file}}"
    {"boot.tmpl" "boot.clj"}]
   ["rdf" "src/{{top/file}}/rdf"
-   {"rdf.tmpl" "{{rdfa/prefix}}.clj"}]]}
+   {"rdf.tmpl" "{{main/file}}.clj"}]]}
