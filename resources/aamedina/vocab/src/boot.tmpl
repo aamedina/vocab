@@ -1,5 +1,9 @@
 (ns {{top/ns}}.{{main/ns}}.boot
-  {:rdf/type :jsonld/Context})
+  {:rdf/type :jsonld/Context}
+  (:require
+   [net.wikipunk.rdf.rdf]
+   [net.wikipunk.rdf.rdfs]
+   [net.wikipunk.rdf.owl]))
 
 (def {{rdfa/prefix}}
   {:rdf/type    :rdfa/PrefixMapping
