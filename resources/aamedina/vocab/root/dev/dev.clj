@@ -21,12 +21,11 @@
    [com.walmartlabs.schematic :as sc]
    [net.wikipunk.boot]
    [net.wikipunk.ext]
-   [net.wikipunk.mop :as mop :refer [isa? descendants parents ancestors]]
+   [net.wikipunk.mop :as mop]
    [net.wikipunk.rdf :as rdf :refer [doc]]
    [zprint.core :as zprint]
    [{{top/ns}}.{{main/ns}}.boot :as boot]
-   [{{top/ns}}.rdf.{{rdfa/prefix}}])
-  (:refer-clojure :exclude [isa? descendants parents ancestors]))
+   [{{top/ns}}.rdf.{{rdfa/prefix}}]))
 
 (set-init
   (fn [_]
