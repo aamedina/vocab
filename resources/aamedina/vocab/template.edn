@@ -6,7 +6,9 @@
  :transform
  [["build" ""
    {"deps.tmpl" "deps.edn"}]
+  ["src" "src/clj/{{top/file}}"
+   {"component.tmpl" "{{main/file}}.clj"} :only]
   ["src" "src/cljc/{{top/file}}/{{main/file}}"
-   {"boot.tmpl" "boot.cljc"}]
+   {"boot.tmpl" "boot.cljc"} :only]
   ["rdf" "src/cljc/{{top/file}}/rdf"
    {"rdf.tmpl" "{{main/file}}.cljc"}]]}

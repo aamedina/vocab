@@ -1,0 +1,14 @@
+(ns {{top/ns}}.{{main/ns}}
+  (:require
+   [{{top/ns}}.{{main/ns}}.boot]
+   [com.stuartsierra.component :as com]
+   [{{top/ns}}.rdf.{{rdfa/prefix}}]
+   ;; require RDF namespaces you want here
+   ))
+
+(defrecord Vocab []
+  com/Lifecycle
+  (start [this]
+    this)
+  (stop [this]
+    this))
