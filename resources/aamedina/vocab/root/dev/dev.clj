@@ -19,13 +19,14 @@
    [com.stuartsierra.component :as com]
    [com.stuartsierra.component.repl :refer [reset set-init start stop system]]
    [com.walmartlabs.schematic :as sc]
+   [datomic.client.api :as d]
    [net.wikipunk.boot]
    [net.wikipunk.ext]
    [net.wikipunk.mop :as mop]
    [net.wikipunk.rdf :as rdf :refer [doc]]
+   [net.wikipunk.datomic.boot :as db]   
    [zprint.core :as zprint]
-   [{{top/ns}}.{{main/ns}}.boot :as boot]
-   [{{top/ns}}.rdf.{{rdfa/prefix}}]))
+   [{{top/ns}}.{{main/ns}}]))
 
 (set-init
   (fn [_]
@@ -41,3 +42,6 @@
   [& body]
   `(do (@user/reveal (do ~@body))
        true))
+
+(comment
+  (def boot-db (db/test-bootstrap (:db system))))
